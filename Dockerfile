@@ -24,7 +24,7 @@ WORKDIR /oracle_client
 COPY instantclient.tgz .
 RUN tar xzvf instantclient.tgz
 
-ENV ORACLE_HOME=/oracle_client/instantclient_12_1
+ENV ORACLE_HOME=/oracle_client/instantclient
 WORKDIR $ORACLE_HOME
 RUN ln -s libclntsh.so.12.1 libclntsh.so
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME
