@@ -16,6 +16,14 @@
 FROM python:slim
 
 # ENVs
+# Define proxy ENVs (if needed)
+#ENV FTP_PROXY=http://http.proxy.net:8765
+#ENV HTTPS_PROXY=$FTP_PROXY
+#ENV HTTP_PROXY=$FTP_PROXY
+#ENV ftp_proxy=$FTP_PROXY
+#ENV http_proxy=$FTP_PROXY
+#ENV https_proxy=$FTP_PROXY
+
 # Specify the Superset version to pull via "pip":
 ENV SUPERSET_VERSION=0.17.0
 
